@@ -84,6 +84,9 @@
           transition: background 0.2s ease;
         }
         .teaching-entry:hover { background: #f4f4f4; }
+        /* UTA courses: blue accent; Virginia Tech entries retain maroon. */
+        .teaching-entry.uta-course { border-left-color: #0064A4; }
+        .teaching-entry.uta-course h3 { color: #0064A4; }
         .teaching-entry h3 {
           color: #861F41;
           margin: 0 0 0.4em 0;
@@ -141,49 +144,51 @@
         <section>
           <h2 class="section-title"><i class="fa fa-chalkboard-teacher"></i> Teaching Experience</h2>
 
-          <div class="teaching-entry">
-            <h3>Assistant Professor of Instruction</h3>
-            <p><span class="course">DATA 3402: Python</span> — University of Texas at Arlington</p>
+          <div class="teaching-entry uta-course">
+            <h3>Instructor <span class="scheduled-tag">(Spring 2027)</span></h3>
+            <p><span class="course">DATA 4392 / ASDS 6300: Applied Agentic AI and LLM Systems</span> — University of Texas at Arlington</p>
             <p>
-              Teach applied Python programming for data science, with hands-on labs and programming exercises
-              connecting core language concepts to data analysis workflows.
+              Designed and developed this new 3-credit, project-based course, scheduled for Spring 2027
+              for undergraduate and master's students. The course progresses from building a basic LLM
+              application to a retrieval-augmented generation (RAG) assistant and a tool-using AI agent.
+              Students evaluate reliability, safety, and responsible use while developing a working final prototype.
+            </p>
+            <p class="date">Spring 2027 (scheduled) · Mon &amp; Wed, 4:00–5:20 PM</p>
+          </div>
+
+          <div class="teaching-entry uta-course">
+            <h3>Co-Instructor</h3>
+            <p><span class="course">DATA 3402: Python for Data Science 2</span> — University of Texas at Arlington</p>
+            <p>
+              Lead weekly lab sessions focused on Python programming, Jupyter notebooks, and applied data science
+              exercises. Help students put lecture concepts into practice and troubleshoot programming assignments.
             </p>
             <p class="date">Fall 2026</p>
           </div>
 
-          <div class="teaching-entry">
+          <div class="teaching-entry uta-course">
             <h3>Co-Instructor</h3>
             <p><span class="course">DATA 3461: Machine Learning</span> — University of Texas at Arlington</p>
             <p>
-              Co-teach machine learning, connecting core modeling and evaluation concepts with practical
-              notebooks, Kaggle-based projects, and student presentations.
+              Co-teach an undergraduate machine learning course with 22 students. Develop lecture materials
+              and notebook-based demonstrations, support model selection and evaluation, and guide students
+              through team-based Kaggle projects and final presentations.
             </p>
             <p class="date">Fall 2026</p>
-          </div>
-
-          <div class="teaching-entry">
-            <h3>Course Developer &amp; Instructor <span class="scheduled-tag">(Spring 2027)</span></h3>
-            <p><span class="course">DATA 4392 / ASDS 6300: Applied Agentic AI and LLM Systems</span> — University of Texas at Arlington</p>
-            <p>
-              Developed a new project-based course offered in Spring 2027 for undergraduate and master's students.
-              Students build LLM-powered applications, RAG assistants, and tool-using agents, with attention to
-              evaluation, safety, and responsible deployment.
-            </p>
-            <p class="date">Spring 2027 (upcoming) · Monday &amp; Wednesday, 4:00–5:20 PM</p>
           </div>
 
           <div class="teaching-entry">
   <h3>Instructor of Record</h3>
   <p><span class="course">CS 4264: Principles of Computer Security</span> — Virginia Tech</p>
   <p>
-    Designing and delivering an undergraduate security course covering foundational principles in modern computer security,
-    including secure software design, cryptography, attacks and defenses across systems and networks, privacy, and data protection.
-    The course also discusses intersections between security and emerging technologies (e.g., machine learning and blockchain).
+    Served as instructor of record for an undergraduate course on computer security, covering cryptography,
+    secure software design, network and system attacks and defenses, privacy, and data protection.
+    Connected foundational topics to modern software and security case studies.
   </p>
   <ul>
-    <li>Develop hands-on programming assignments focused on practical security mechanisms and threat models (e.g., password security, PGP, DNSSEC).</li>
-    <li>Emphasize reproducible experimentation, ethical reasoning, and responsible disclosure practices in security-critical contexts.</li>
-    <li>Incorporate tool-assisted analysis and real-world case studies to connect concepts to secure software engineering workflows.</li>
+    <li>Developed hands-on assignments on password security, PGP, DNSSEC, and practical threat modeling.</li>
+    <li>Used real-world cases and tool-assisted analysis to connect security principles to software engineering practice.</li>
+    <li>Emphasized reproducible experiments, ethical reasoning, and responsible disclosure.</li>
   </ul>
   <p class="date">Spring 2026</p>
 </div>
@@ -213,8 +218,8 @@
 
 <div class="award-badge">
   <i class="fa fa-award"></i>
-  Won Best Instructor of the Year Award, Virginia Tech
-  <span class="award-date"> - 2024</span>
+  Virginia Tech Department of Computer Science — Instructor of Record Award
+  <span class="award-date"> · 2024</span>
 </div>
 
 
@@ -325,10 +330,10 @@
         <section>
           <h2 class="section-title"><i class="fa fa-lightbulb"></i> Teaching Philosophy</h2>
           <p>
-            My teaching emphasizes applied learning, critical reasoning, and inclusive engagement.
-            I integrate real-world examples from blockchain, AI, and security to connect theoretical knowledge
-            with practical relevance. I aim to empower students with both technical competence and ethical
-            responsibility as emerging computing professionals.
+            I build courses around a sequence of explanation, implementation, and evaluation. In Python,
+            students work directly with code and data; in machine learning, they test models and examine
+            the consequences of design choices; and in security, they investigate concrete threats and defenses.
+            My goal is for students to explain not only how a system works, but also when it might fail and why.
           </p>
         </section>
       </main>
